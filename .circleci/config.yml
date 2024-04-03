@@ -12,8 +12,12 @@ jobs:
       # - run: sudo apt-get install -y maven
       
       # Run your build commands
-      - run: javac src/base/*.java  # Compile your Java source files
-      - run: java -cp src/base TestCase  # Replace 'Main' with the name of your main class
+      - run:
+          name: Compile Java source files
+          command: javac -d target src/base/*.java  # Compile your Java source files and output to 'target' directory
+      - run:
+          name: Run Java program
+          command: java -cp target base.TestCase  # Replace 'base.TestCase' with the fully qualified name of your main class
 
 workflows:
   version: 2
