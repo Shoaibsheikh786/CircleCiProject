@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Run Java program
           command: java -cp src base.TestCase  # Replace 'base.TestCase' with the fully qualified name of your main class
-
+          command: java -cp src base.TestCase2
 workflows:
   version: 2
   build:
