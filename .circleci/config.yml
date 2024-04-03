@@ -12,7 +12,7 @@ jobs:
       # - run: sudo apt-get install -y maven
       
       # Run your build commands
-      - run: javac src/*.java  # Compile your Java source files
+      - run: javac src/base/*.java  # Compile your Java source files
       - run: java -cp src TestCase  # Replace 'Main' with the name of your main class
 
 workflows:
