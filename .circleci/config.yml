@@ -13,11 +13,11 @@ jobs:
       
       # Run your build commands
       - run:
-          name: Compile Java source files
-          command: javac -d target src/base/*.java  # Compile your Java source files and output to 'target' directory
+          name: Compile Java source files  
+          command: javac -d  src/base/*.java  # Compile your Java source files and output to 'target' directory
       - run:
           name: Run Java program
-          command: java -cp target base.TestCase  # Replace 'base.TestCase' with the fully qualified name of your main class
+          command: java -cp  base.TestCase  # Replace 'base.TestCase' with the fully qualified name of your main class
 
 workflows:
   version: 2
