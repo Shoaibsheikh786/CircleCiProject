@@ -14,7 +14,7 @@ jobs:
       # Run your build commands
       - run:
           name: Compile Java source files
-          command: javac -d src/base/TestCase.java  # Compile your Java source file and output to 'target' directory
+          command: javac src/base/TestCase.java  # Compile your Java source file and output to 'target' directory
       - run:
           name: Run Java program
           command: java -cp src/base/TestCase.java # Replace 'base.TestCase' with the fully qualified name of your main class
