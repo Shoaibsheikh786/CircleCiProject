@@ -13,7 +13,7 @@ jobs:
       
       # Run your build commands
       - run:
-          name: Compile Java source files
+          name: Compile Java source files  
           command: javac -d target src/base/*.java  # Compile your Java source files and output to 'target' directory
       - run:
           name: Run Java program
