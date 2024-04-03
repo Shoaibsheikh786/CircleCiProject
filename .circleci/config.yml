@@ -6,12 +6,14 @@ jobs:
       - image: circleci/openjdk:8-jdk  # Choose appropriate Java version
     steps:
       - checkout
-
-      # Setup Maven
-      - run: sudo apt-get install -y maven
-
-      # Run Maven build
-      - run: mvn -B clean install
+      
+      # Install any dependencies or tools your project needs
+      # For example, if your project requires Maven:
+      # - run: sudo apt-get install -y maven
+      
+      # Run your build commands
+      - run: javac src/*.java  # Compile your Java source files
+      - run: java -cp src Main  # Replace 'Main' with the name of your main class
 
 workflows:
   version: 2
