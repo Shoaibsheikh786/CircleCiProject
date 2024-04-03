@@ -17,7 +17,7 @@ jobs:
           command: javac  src/base/*.java  # Compile your Java source files and output to 'target' directory
       - run:
           name: Run Java program
-          command: java  src/base.TestCase  # Replace 'base.TestCase' with the fully qualified name of your main class
+          command: java  src/base/TestCase  # Replace 'base.TestCase' with the fully qualified name of your main class
 
 workflows:
   version: 2
