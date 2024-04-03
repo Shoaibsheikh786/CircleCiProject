@@ -13,7 +13,7 @@ jobs:
       
       # Run your build commands
       - run: javac src/*.java  # Compile your Java source files
-      - run: java -cp src Main  # Replace 'Main' with the name of your main class
+      - run: java -cp src TestCase  # Replace 'Main' with the name of your main class
 
 workflows:
   version: 2
